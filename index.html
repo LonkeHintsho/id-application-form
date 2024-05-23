@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Number Validation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>ID Number Validation</h2>
+    <form id="idForm">
+      <label for="idNumber">Enter South African ID Number:</label>
+      <input type="text" id="idNumber" name="idNumber" required pattern="[0-9]{13}" title="Please enter a 13-digit number">
+      <button type="submit">Validate</button>
+    </form>
+    <div id="result"></div>
+    <div id="details" style="display: none;">
+      <h3>Details</h3>
+      <p>Date of Birth: <span id="dob"></span></p>
+      <p>Gender: <span id="gender"></span></p>
+    </div>
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
